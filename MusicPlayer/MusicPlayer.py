@@ -9,3 +9,6 @@ def pause():
 
 def skip():
     pass
+
+def shuffle():
+    pass
