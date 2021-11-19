@@ -1,14 +1,5 @@
 import pygame as pg
-
-
-def gusty_garden_galaxy():
-    pg.mixer.music.load("Music/MarioGalaxy1/17 Garden.mp3")
-    pg.mixer.music.set_volume(0.7)
-
-
-def overtune():
-    pg.mixer.music.load("Music/MarioGalaxy1/01 Overture.mp3")
-    pg.mixer.music.set_volume(0.7)
+from MusicApp import
 
 
 def play():
@@ -28,10 +19,10 @@ def get_element(event):
     index = selection[0]
     value = event.widget.get(index)
     if value == "Overtune":
-        overtune()
+        mn.overtune()
         play()
     elif value == "Gusty Garden Galaxy":
-        gusty_garden_galaxy()
+        mn.gusty_garden_galaxy()
         play()
     else:
         print("How?!")

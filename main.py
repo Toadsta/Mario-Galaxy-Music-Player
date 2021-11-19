@@ -1,6 +1,5 @@
-import tkinter
 from tkinter import *
-from Music import MusicFunctions as Mf
+from MusicApp import MusicFunctions as Mf
 import pygame as pg
 
 
